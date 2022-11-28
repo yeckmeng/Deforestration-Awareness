@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Contact Us</title>
+</head>
+
+
+<header>
+    <nav class = "navigation">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "contactus.html">Contact us</a></li>
+            <li><a href = "login.html">Login</a></li>
+            <li><a href = "donation.html">Donate</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+
+<div class = "mainform">
+    <form name = "contactusform" action = "index.html" onsubmit= "formSubmit()">
+        <div class = "contactuscontainer">
+            <h2> Contact us</h2>
+            <label for="helpwith">What can we help you with?</label>
+            <select style="height: 5.5vh;" id="helpwith" name="helplist">
+            <option value="Signing">Signing up</option>
+            <option value="Password">Password</option>
+            <option value="Security">Security</option>
+            <option value="Others">Others</option>
+            </select> <br>
+    <br>
+            <label for="fname">First name: </label><br>
+            <input type="text" id="fname" name="fname" onsubmit = "verifyName()" placeholder="Enter First name" required pattern="[A-Za-z]+"><br><br>
+            <label for="lname">Last name: </label><br>
+            <input type="text" id="lname" name="lname" onsubmit = "verifyName()" placeholder="Enter Last name" required pattern="[A-Za-z]+"><br><br>
+            <label for="email">Email: </label><br>
+
+            <div class = "email-all">
+                <input type="email" 
+                id="email"
+                onsubmit = "verifyEmail()" 
+                placeholder="Enter Email"
+                name="email" required>
+            </div>
+
+            <br>
+            
+            <label for="details">Details: </label><br>
+            <textarea id="details" name = "details" rows = "3" cols = "15"> </textarea><br><br>
+            
+
+            <div class = "buttonstyle">
+                <button> Submit </button>
+            </div>
+
+
+        </div>
+        
+    </form>
+</div>
+
+<script>
+    function formSubmit() {
+      alert("Info Sent Successfully");
+    }
+  </script>
+    
+</body>
+
+<footer>
+    <div class="footer">
+
+    </div>
+</footer>
+ 
+</html>
+ 

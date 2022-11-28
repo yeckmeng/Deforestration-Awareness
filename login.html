@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+<div class = mainform>
+  <form name = "loginform" action="index.html" onsubmit= "formSubmit()">
+    <div class="logincontainer">
+      <h1>Login</h1>
+      <hr>
+      <div class = "email-all">
+          <label for="email-label"><b>Email</b></label>
+          <input type="email" 
+          placeholder="Enter Email" 
+          id = "email"
+          onsubmit = "verifyEmail()"
+          name="emailInput" required
+        >
+      </div>
+
+      <br><br>
+
+      <div class = "password-all">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <br><br>
+
+      <br>
+      
+      <p>Enter your email address and password to login to our website</p>
+
+      <br> 
+      
+      <div class="buttonstyle">
+          <button type="submit" class="loginbutton">Login</button>
+      </div>
+
+      <br>
+
+
+      <div class="buttonstyle">
+        <button onclick="window.location='signup.html';" >No account? Sign up</button>
+      </div>
+
+    </div>
+  
+  </form>
+</div>
+
+
+<script>
+  function formSubmit() {
+    alert("Login successful!");
+  }
+</script>
+  
+</body>
+</html>
