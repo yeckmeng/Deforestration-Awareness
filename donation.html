@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<header>
+    <nav class = "navigation">
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href = "contactus.html">Contact us</a></li>
+            <li><a href = "login.html">Login</a></li>
+            <li><a href = "donation.html">Donate</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<div class = "mainform">
+    <form name = "donationform" action = "index.html" onsubmit= "formSubmit()">
+        <div class = donatecontainer>
+            <h3> Donate to help for replantation of trees!</h3>
+            <br>
+            <label for="credit id">Credit card number</label>
+            <br>
+            <input type="text" placeholder = "0000111100001111" required pattern="[0-9]{16,16}"> <br>
+
+            <label for="credit expire">Credit card expire date</label>
+            <br>
+            <input type="text" placeholder = "MM/YY Example: (0298)" required pattern="[0-9]{4,4}"> <br>
+
+            <label for="credit id">Credit card CVS</label>
+            <br>
+            <input type="text" placeholder = "123" required pattern="[0-9]{3,3}"> <br>
+        
+        
+            <label for="donate">Donate RM:</label>
+            <br>
+            <input type="number" placeholder = "0"> <br>
+   
+            <br>
+            <div class="buttonstyle">
+                <button type="submit" class="donate">Donate</button>
+            </div>       
+        </div>
+    </form>
+</div>
+</div>
+
+<script>
+    function formSubmit() {
+      alert("Donated");
+    }
+  </script>
+
+</html>

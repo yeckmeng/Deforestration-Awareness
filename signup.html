@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Home</title>
+</head>
+
+<body>
+
+<div class = "mainform">
+  <form name = "signupform" action="index.html" onsubmit= "formSubmit()">
+    <div class="signupcontainer">
+      <h1>Sign up</h1>
+      <hr>
+      <div class = "email-all">
+          <label for="email-label"><b>Email</b></label>
+          <input type="email" 
+          placeholder="Enter Email" 
+          id = "email"
+          onsubmit = "verifyEmail()"
+          name="emailInput" required
+        >
+      </div>
+
+      <br><br>
+
+      <div class = "password-all">
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      </div>
+
+      <br><br>
+
+      <div class = "work-all">
+        <label for = "work"> Choose your current work occupation</label>
+        <select name = "work" id = "work">
+            <option value = "student">Student</option>
+            <option value = "agriculture">Agriculture, Food, & Natural Resources</option>
+            <option value = "busienss">Business, Management, & Administration</option>
+            <option value = "communications">Communications & Information Systems</option>
+            <option value = "engineering">Engineering, Manufacturing, & Technology</option>
+            <option value = "health">Health Science Technology</option>
+            <option value = "humans">Human Services</option>
+            <option value = "others">Others</option>
+        </select>
+      </div>
+
+      <br>
+      
+      <p>Enter your desired email address and password to sign up to our website</p>
+
+      <br> 
+      
+      <div class="buttonstyle">
+          <button type="submit" class="signup">Sign up</button>
+      </div>
+
+      <br>
+
+      <div class="buttonstyle">
+        <button onclick="window.location='login.html';" >Have an account already? Login</button>
+      </div>
+
+    </div>
+
+  </form>
+</div>
+
+
+<script>
+  function formSubmit() {
+    alert("Signup successful!");
+  }
+</script>
+  
+</body>
+</html>
